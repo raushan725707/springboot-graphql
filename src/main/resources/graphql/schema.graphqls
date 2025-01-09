@@ -1,0 +1,8 @@
+type Product{
+     name:String category:String stock:String rating:String
+}
+
+type Query{
+    searchProductByCategory( category:String):[Product]
+    allProducts:[Product]
+}
