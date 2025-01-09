@@ -36,7 +36,7 @@ Follow these steps to set up the project locally:
 
 2. Navigate to the project directory:
     ```bash
-    cd product-management-graphql
+    cd springboot-graphql
     ```
 
 3. Install the dependencies:
@@ -44,11 +44,6 @@ Follow these steps to set up the project locally:
         ```bash
         mvn clean install
         ```
-    - If you're using **Gradle**:
-        ```bash
-        gradle build
-        ```
-
 4. Run the application:
     ```bash
     mvn spring-boot:run
@@ -61,19 +56,3 @@ Follow these steps to set up the project locally:
 Once the application is running, you can access the **GraphQL endpoint** at:
 
 - **GraphQL endpoint**: `http://localhost:8080/graphql`
-
-You can use any GraphQL client (e.g., [Postman](https://www.postman.com/), [GraphiQL](https://github.com/graphql/graphiql), or [GraphQL Playground](https://github.com/prisma-labs/graphql-playground)) to test your queries and mutations.
-
-### Example Queries
-
-#### Query to get all products:
-
-```graphql
-query {
-  allProducts {
-    name
-    category
-    stock
-    rating
-  }
-}
